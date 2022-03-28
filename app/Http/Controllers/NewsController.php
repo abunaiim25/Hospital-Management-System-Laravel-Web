@@ -83,7 +83,7 @@ class NewsController extends Controller
           ->paginate(10);
           return view('admin.news.show_news',compact('news'));
       }
-
+      
 
     public function edit_news($id)
      {

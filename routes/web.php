@@ -48,6 +48,7 @@ Route::get('/appointments-admin-nav',[AdminController::class,'appointmentsNav'])
 Route::get('/approved_appoint_admin/{id}',[AdminController::class,'approved_appoint_admin']);
 Route::get('/cancele_appoint_admin/{id}',[AdminController::class,'cancele_appoint_admin']);
 Route::get('/message_seen/{id}',[AdminController::class,'message_seen']);
+//send mail
 Route::get('/email_view/{id}',[AdminController::class,'email_view']);
 Route::post('/send_email/{id}',[AdminController::class,'send_email']);
 
@@ -55,7 +56,8 @@ Route::post('/send_email/{id}',[AdminController::class,'send_email']);
 Route::get('/add_news',[NewsController::class,'add_news']);
 Route::post('/news_upload',[NewsController::class,'news_upload']);
 Route::get('/show_news',[NewsController::class,'show_news']);
-
+Route::get('/edit_news/{id}',[NewsController::class,'edit_news']);
+Route::post('/news_edit_update/{id}',[NewsController::class,'news_edit_update']);
 
 
 //===========Admin search===============
@@ -85,8 +87,7 @@ Route::get('/contact',[HomeController::class,'contact']);
 //=============news==========
 Route::get('/news',[NewsController::class,'news']);
 Route::get('/news_details/{id}',[NewsController::class,'news_details']);
-Route::get('/edit_news/{id}',[NewsController::class,'edit_news']);
-Route::post('/news_edit_update/{id}',[NewsController::class,'news_edit_update']);
+
 
 
 

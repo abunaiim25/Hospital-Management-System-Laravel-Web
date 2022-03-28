@@ -25,6 +25,7 @@
             </div> <!-- .row -->
 
             <div class="row">
+                
                 <div class="col-lg-8">
                     <article class="blog-details">
                         <div class="post-thumb">

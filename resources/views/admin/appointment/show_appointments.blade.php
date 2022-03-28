@@ -27,7 +27,7 @@
             <th>Message</th>
             <th>Approved</th>
             <th>Canceled</th>
-            <th>Sand Mail</th>
+            <th>Send Mail</th>
         </tr>
 
         @foreach ($appoint as $item)
